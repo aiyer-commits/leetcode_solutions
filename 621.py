@@ -7,6 +7,7 @@ def solution(case):
     task_counts = list(Counter(tasks).values())
     m = max(task_counts)
     m_count = task_counts.count(m)
+    print(task_counts, m , m_count)
     return max(len(tasks), (m - 1) * (min_break + 1) + m_count)
 
 
